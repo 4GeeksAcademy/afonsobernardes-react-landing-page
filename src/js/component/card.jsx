@@ -1,12 +1,12 @@
 import React from "react";
 
-const Card = () => {
+const Card = ( {text, imageURL} ) => {
 	return (
-		<div className="card">
-			<img src="#" className="card-img-top" alt="..."/>
+		<div className="card h-100">
+			<img src={imageURL} className="card-img-top img-fluid" alt="..."/>
             <div className="card-body text-center">
                 <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                
+                <p className="card-text">{text}</p>                
             </div>
 
             <div class="card-footer bg-light text-center">
