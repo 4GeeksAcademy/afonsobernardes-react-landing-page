@@ -4,12 +4,18 @@ import React from "react";
 
 import Card from "./card";
 import Navbar from "./navbar";
+import Jumbotron from "./jumbotron";
 
 //create your first component
 const Home = () => {
 	return (
 		<div className="container-fluid p-0">
-			<Navbar/>
+			<Navbar />
+
+			<div className="container d-flex w-50 pt-5">
+				<Jumbotron />
+			</div>
+			
 		</div>
 	);
 };
